@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DD000000"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guideline"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintGuide_percent=".5"
+       android:orientation="vertical"/>
+
+    <ImageView
+        android:id="@+id/france"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/france"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/france"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toEndOf="@id/france"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/croatia"
+        app:layout_constraintEnd_toStartOf="@+id/croatia"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/croatia" />
+
+    <ImageView
+        android:id="@+id/croatia"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/croatia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:text="France"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/france"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/france"
+        app:layout_constraintTop_toBottomOf="@id/france" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:text="Croatia"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/croatia"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/croatia"
+        app:layout_constraintTop_toBottomOf="@id/croatia" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
